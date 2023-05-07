@@ -1,0 +1,287 @@
+/*______APP___________________________________________________*/
+i.fa{
+    font-size: 30px;
+    margin-right: 10px;
+}
+.main{
+    background-image: url(../img/background__main.jpg);
+    background-repeat: no-repeat;
+    animation: slide 90s linear infinite;
+}
+@keyframes slide {
+    0%{
+        background-position: 0% 0%;
+    }
+    50%{
+        background-position: 100% 0%;
+    }
+    100%{
+        background-position: 0% 0%;
+    }
+}
+.app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.app__header{
+    background-color: rgb(0, 0, 0, 0.5);
+    border-bottom: 7px solid orange;
+    min-height: 247px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+}
+.app__logo{
+    padding: 20px 0;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+.app__body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.app__btn{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 50px;
+    width: 240px;
+    background-image: linear-gradient(to right, #3d4adf, #2747c7, #1542ae, #093c95, #0a367c);
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 16px 16px 0 rgba(0, 40, 120, 0.5);
+    transition: .5s;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 20px;
+    color: aliceblue;
+}
+.app__btn:focus{
+    outline: none;
+}
+.app__btn:hover{
+    box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+    background-position: 0 0;
+}
+/*___________ACHIVMENT_____________________________________*/
+
+
+.achivments .app__body {
+    justify-content: flex-start;
+}
+.app__body-inner {
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.app__body-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+.app__body-top {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: max-content max-content;
+    place-content: center center;
+    margin-bottom: 20px;
+}
+.app__card {
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 20px 10px;
+    border: 7px solid rgb(1,88,154,0.5);
+    text-align: center;
+}
+.app__card:nth-child(1){
+    border-right: none;
+    border-bottom: none;
+}
+.app__card:nth-child(2){
+    border-left: none;
+    border-bottom: none;
+}
+.app__card:nth-child(3){
+    border-right: none;
+    border-top: none;
+}
+.app__card:nth-child(4){
+    border-left: none;
+    border-top: none;
+}
+.app__card-text {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.app__card-count {
+    font-size: 18px;
+}
+.app__body-middle {
+    margin-bottom:15px;
+}
+.app_result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    border: 7px solid rgb(1,88,154,0.5);
+    margin-bottom: 14px;
+    background-color: rgba(6, 31, 73, 0.333);
+}
+.app_result:last-child{
+    margin-bottom: 0px;
+}
+i.fa-star {
+    margin-right: 0;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+.app__result-name {
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: 40px;
+
+}
+.app__result-amount {
+    font-size: 20px;
+}
+.btn__back {
+    width: 150px;
+}
+.app__body-bottom{
+    display: flex;
+}
+/*__________________question________________________*/
+.app__header-inner{
+    text-align: center;
+    color: wheat;
+}
+.app__count{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.app__text{
+    font-size: 20px;
+}
+/*_______________card_______________________________*/
+
+.results .app__body {
+    justify-content: space-between;
+}
+.app__results-inner {
+    color: beige;
+    padding: 20px;
+}
+.results__title {
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+.results__img {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.results__img img{
+    width: 250px;
+}
+.results__text-box {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+
+}
+.results__text {
+    padding: 8px;
+    text-align: justify;
+    margin-bottom: 20px;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+.results__quote{
+    width: 800px;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+.app.results{
+    animation: none;
+    background-size: cover;
+    background-position: center center;
+}
+.app.results[data-race="zerg"]{
+    background-image: url(../img/zerg_bg.jpg);
+}
+.app.results[data-race="primal"]{
+    background-image: url(../img/primal_bg.jpg);
+}
+.app.results[data-race="terran"]{
+    background-image: url(../img/terran_bg.jpg);
+}
+.app.results[data-race="infested"]{
+    background-image: url(../img/infested_bg.jpg);
+}
+.app.results[data-race="protoss"]{
+    background-image: url(../img/protoss_bg.jpg);
+}
+.app.results[data-race="taldarim"]{
+    background-image: url(../img/taldarim_bg.jpg);
+    background-position: 40% 0;
+}
+.app.results[data-race="hybrid"]{
+    background-image: url(../img/hybrid_bg.jpg);
+    background-position: 45% 0;
+}
+.btn__race{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    min-height: 50px;
+    width: 150px;
+    background-color: #762877;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 25px 20px 0 rgba(10, 12, 16, 0.5);
+    transition: .5s;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 20px;
+    color: black;
+}
+.btn__race:hover{
+    box-shadow: 0 0 0 0 rgb(7, 7, 71, 0);
+    background-position: 0 0;
+}
+.btn__primal{
+    background-color: #56a725;
+}
+.btn__protoss{
+    background-color: #fce356;
+}
+.btn__taldarim{
+    background-color: #9d0101;
+}
+.btn__terran{
+    background-color: #da8618;
+}
+.btn__infested{
+    background-color: #f5b673;
+}
+.btn__hybrid{
+    background-color: #fc7654;
+}
+
