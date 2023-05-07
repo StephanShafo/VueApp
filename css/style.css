@@ -51,7 +51,7 @@ i.fa{
     padding: 10px 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     min-height: 50px;
     width: 240px;
@@ -64,6 +64,10 @@ i.fa{
     font-size: 20px;
     line-height: 20px;
     color: aliceblue;
+}
+.btn__center{
+    display: flex;
+    justify-content: center;
 }
 .app__btn:focus{
     outline: none;

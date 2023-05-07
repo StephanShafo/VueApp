@@ -1,6 +1,6 @@
 const resetButton = document.createElement('button');
 resetButton.textContent = 'reset';
-resetButton.classList.add('app__btn', 'btn__back');
+resetButton.classList.add('app__btn', 'btn__back', 'btn__center');
 resetButton.addEventListener('click', () => {
   localStorage.clear();
   window.location.reload();
