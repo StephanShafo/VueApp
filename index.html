@@ -19,16 +19,20 @@
             </div>
             <div class="app__body">
                 <button class="app__btn" @click="goToQuestions">
-                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
-                <div class="app__btn-text">start</div>
+                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                    <div class="app__btn-text">start</div>
                 </button>
                 <button class="app__btn" @click="goToAchivments">
-                <i class="fa fa-trophy" aria-hidden="true"></i>
-                <div class="app__btn-text">achievements</div>
+                    <i class="fa fa-trophy" aria-hidden="true"></i>
+                    <div class="app__btn-text">achievements</div>
                 </button>
                 <button class="app__btn" @click="goToSocial">
-                <i class="fa fa-user" aria-hidden="true"></i>
-                <div class="app__btn-text">author</div>
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <div class="app__btn-text">author</div>
+                </button>
+                <button class="app__btn btn__sound">
+                    <i class="fa fa-volume-up"aria-hidden="true"></i>
+                    <div class="app__btn-text">sound</div>
                 </button>
             </div>
             </div>
@@ -75,7 +79,6 @@
                         <button class="app__btn btn__back btn_achivment" @click="goToMain">
                         <i class="fa fa-reply" aria-hidden="true"></i>
                         </button>
-                        
                     </div>
                 </div>
                 </div>
@@ -134,5 +137,6 @@
     <script src="js/const.js"></script>
     <script src="js/vue.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/reset.js"></script>
 </body>
 </html>
