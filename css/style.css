@@ -192,7 +192,7 @@ i.fa-star {
     padding: 15px;
     border-radius: 5px;
 }
-@media(max-width:701px){
+@media(max-width:912px){
     .aboutgame{
         
         width: 700px;
@@ -225,6 +225,12 @@ i.fa-star {
 .img__about img{
 width: 200px;
 padding: 10px;
+}
+@media(max-width:912px){
+    .img__about img{
+        
+        width: 200px;
+    }
 }
 @media(max-width:394px){
     .img__about img{
