@@ -28,7 +28,7 @@
                 </button>
                 <button class="app__btn" @click="goToSocial">
                     <i class="fa fa-user" aria-hidden="true"></i>
-                    <div class="app__btn-text">АВТОР</div>
+                    <div class="app__btn-text">ОБ ИГРЕ</div>
                 </button>
                 <button class="app__btn btn__sound">
                     <i class="fa fa-volume-off"aria-hidden="true"></i>
@@ -102,8 +102,22 @@
 
             <div class="app" v-show="showSocial">
                 <div class="app__body">
+                    <div class="aboutgame">
+                        <div class="description">
+                            Открой двери в мир стратегических чудес! Наслаждайся захватывающим путешествием, 
+                            вдохновленным легендарной игрой StarCraft. Эта игра - тест, состоящий из 25 вопросов,
+                            позволяющий раскрыть твою истинную природу и определить к какой расе ты принадлежишь. 
+                            Твои решения раскроют твои скрытые качества и стратегические способности.
+                            Погрузись в этот уникальный мир и обнаружь свою истинную расу.</div>
+                            <div class="img__about">
+                                <img src="img/hybrid_logo.png" alt="">
+                                <img src="img/primal_logo.png" alt="">
+                                <img src="img/zerg_logo.png" alt="">
+                            </div>
+                    </div>
                 <a target="_blank" href="https://vk.com/sinusanysa" class="app__btn">
                     <i class="fa fa-vk" aria-hidden="true"></i>
+                    <p>author</p>
                     <div class="app__btn-text">Vkontakte</div>
                 </a>
                 <button class="app__btn btn__back btn__center" @click="goToMain">
